@@ -1,0 +1,1 @@
+console.log("Parhta tu randi h ")
