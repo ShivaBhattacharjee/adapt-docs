@@ -8,7 +8,7 @@ The `@realtime.streaming_endpoint` decorator is used to define asynchronous func
 
 ## Creating Streaming Functions
 
-Streaming functions are defined using the `@realtime.streaming_endpoint` decorator. Below is an example of how to create a streaming function that processes audio and video streams:
+Streaming functions are defined using the `@realtime.streaming_endpoint` decorator. Below is an example of how to create a streaming function that processes audio and video streams:
 
 ```python
 from realtime import App, streaming_endpoint
@@ -25,9 +25,8 @@ class MediaProcessor:
         return processed_audio, processed_video
 ```
 
-<Info>Note the type hints in the function’s arguments. These are strictly required. Type hints are picked up by the realtime package, and are used to generate the streams.</Info>
 
-## Specifying Additional Data for Streaming Functions
+## Specifying Additional Data for Apps
 
 You can customize the environment of your streaming functions using various parameters in the `@realtime.streaming_endpoint` decorator:
 
@@ -35,8 +34,7 @@ You can customize the environment of your streaming functions using various para
 | --- | --- | --- | --- |
 | name | str | Defines the name of the streaming function | Default is determined by the system |
 | python_version | str | Specifies the Python version to be used | Default is determined by the system |
-| python_packages | List[str] | Specifies additional Python packages to be installed | `[]` |
-| system_packages | List[str] | Specifies additional system packages to be installed | `[]` |
-| metadata | realtime.Metadata | Provides additional metadata about the function to be displayed on the dashboard | None |
+| python_packages | List[str] | Specifies additional Python packages to be installed | Default is determined by the system |
+| system_packages | List[str] | Specifies additional system packages to be installed | Default is determined by the system |
 
 These parameters help tailor the execution environment to the specific needs of your streaming function, ensuring optimal performance and compatibility.

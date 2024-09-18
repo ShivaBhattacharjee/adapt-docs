@@ -4,11 +4,11 @@ title: rt.App
 
 ## Overview
 
-The `@realtime.App()` decorator is used to define a class as a Realtime application. This decorator enhances the class, enabling it to interact seamlessly with various Realtime services and manage the application lifecycle.
+The `@realtime.App()` decorator is used to define a class as a Realtime application. This decorator enhances the class, enabling it to interact seamlessly with various Realtime services and manage the application lifecycle.
 
 ## Creating an App
 
-To create an app, define a class and decorate it with `@realtime.App()`. Here's a minimal example:
+To create an app, define a class and decorate it with @realtime.App(). Here’s a minimal example:
 
 ```python
 import realtime as rt
@@ -30,8 +30,7 @@ class MyApplication:
 ```
 
 <Info>
-  A Realtime App should have `setup`, `run`, and `teardown` methods, although
-  only `run` is strictly required.
+  Make sure you have obtained an Adapt API key before running this example. To obtain an API key
 </Info>
 
 - The `setup` method is called when the app starts, allowing for initialization.
@@ -48,11 +47,10 @@ The `RealtimeApp` class manages the application lifecycle:
 
 ## Realtime Functions
 
-The app can include Realtime functions, which are methods decorated with `@realtime.function()`. The current implementation supports only one Realtime function per app class.
+The app can include Realtime functions, which are methods decorated with `@realtime.function()`. The current implementation supports only one Realtime function per app class.
 
 <Warning>
-  If more than one Realtime function is defined in the app class, a RuntimeError
-  will be raised.
+  If more than one Realtime function is defined in the app class, a RuntimeError will be raised.
 </Warning>
 
 If a Realtime function is defined, it will be executed concurrently with the `RealtimeServer`, replacing the need for a separate `run` method.
@@ -83,9 +81,19 @@ By following these guidelines, you can create robust and efficient applications 
 
 ## Error Handling
 
-The `RealtimeApp` includes basic error handling:
 
-- If an exception occurs during the app lifecycle (setup, run/Realtime function execution, or teardown), it will be logged as an error.
-- In case of an error, the `RealtimeServer` will be shut down gracefully.
+The `RealtimeApp` includes basic error handling:
 
-It's recommended to implement your own error handling within your app methods for more specific error management.
+- If an exception occurs during the app lifecycle (setup, run/Realtime function execution, or teardown), it will be logged as an error.
+- In case of an error, the `RealtimeServer` will be shut down gracefully.
+
+It’s recommended to implement your own error handling within your app methods for more specific error management.
+
+### Next Steps
+
+You can explore further applications and capabilities here:
+
+<Info>
+Make sure you have obtained an Adapt API key before running this example. To obtain an API key [Contact us](mailto:contact@getadapt.ai)
+</Info>
+

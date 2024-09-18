@@ -36,15 +36,15 @@ a .mr-4 .h-4.w-4.secondary-opacity.group-hover\:fill-primary-dark.group-hover\:b
     background-color: rgba(255, 255, 255, 0.862) !important; 
     border: none !important;          
     width: 150px !important;    
-    height: 35px !important;         
+    height: 32px !important;         
     border-radius: 7px !important;        
 }
 
 html:not(.dark) #topbar-cta-button .group .absolute {
-    background-color: rgba(17, 125, 234, 0.862) !important; 
+    background: linear-gradient(to left, #014159, #012e42)!important; 
     border: none !important;          
     width: 150px !important;    
-    height: 35px !important;         
+    height: 32px !important;         
     border-radius: 7px !important;        
 }
 
@@ -79,7 +79,7 @@ html:not(.dark) #topbar-cta-button .group svg {
 .eyebrow.h-5.text-primary.dark\:text-primary-light.text-sm.font-semibold {
     border: 0px solid #19D8D8; 
     padding: 20px 17px; 
-    background-color: rgba(255, 255, 255, 0.215); 
+    background: linear-gradient(to bottom right, #1E2B34, #122029);
     border-radius: 5px; 
     font-size: large;
     font-weight: normal;
@@ -116,8 +116,9 @@ html:not(.dark) .mt-12.lg\:mt-8 li a div {
 html:not(.dark) .eyebrow.h-5.text-primary.dark\:text-primary-light.text-sm.font-semibold {
     border: 0px solid #19d8d834; 
     padding: 20px 17px; 
-    background-color: rgba(25, 216, 216, 0.095); 
+    background: #e6f8fa; 
     border-radius: 5px; 
+    border: 1px solid #80dae5;
     font-size: large;
     font-weight: normal;
     display: flex; 
@@ -126,4 +127,27 @@ html:not(.dark) .eyebrow.h-5.text-primary.dark\:text-primary-light.text-sm.font-
     width: fit-content;
     margin-bottom: 20px;
     color: black !important;
+}
+
+
+.flex-1 a img.w-auto.h-7.relative.object-contain.block.dark\:hidden {
+    width: 140px; 
+    height: 60px; 
+}
+
+/* Increase the size for dark mode logo */
+.flex-1 a img.w-auto.h-7.relative.object-contain.hidden.dark\:block {
+    width: 140px; 
+    height: 60px; 
+}
+
+/* Change background color in light mode */
+/* Apply linear gradient for light mode */
+.bg-background-light {
+    background: #000F19 !important;
+}
+
+
+html:not(.dark) .bg-background-light {
+    background-color:  #f2f2f2 !important; /* Your preferred color for light mode */
 }
