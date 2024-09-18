@@ -1,0 +1,152 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Adapt AI Docs",
+  "logo": {
+    "dark": "/logo/3.svg",
+    "light": "/logo/2.svg"
+  },
+  "openapi": "/realtime_sdk/openapi.json",
+  "favicon": "/logo/1.svg",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373",
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "https://discord.gg/cmfFw6SYvp"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Raise an Issue",
+    "url": "https://cal.com/outspeed-sahil/30min"
+  },
+  "primaryTab": {
+    "name": "Get Started"
+  },
+  "tabs": [
+    {
+    "name": "Examples",
+    "url": "examples"
+    },
+    {
+      "name": "Realtime SDK",
+      "url": "realtime_sdk"
+    },
+    {
+      "name": "React/JS Client SDK",
+      "url": "javascript"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Join Discord Community",
+      "icon": "discord",
+      "url": "https://discord.gg/cmfFw6SYvp"
+    },
+    {
+      "name": "Book a Demo",
+      "icon": "phone",
+      "url": "https://cal.com/adaptsdk/30min"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "General",
+      "pages": [
+        "guide/quickstart",
+        "guide/introduction",
+        "guide/local_development"
+      ]
+    },
+    {
+      "group": "Conversational Bots",
+      "pages": [
+        {
+          "group": "Advanced Voice Bots",
+          "pages": [
+            "examples/conversational_ai/introduction",
+            "examples/conversational_ai/interruption_handling",
+            "examples/conversational_ai/pathways",
+            "examples/conversational_ai/backchanneling",
+            "examples/conversational_ai/recording",
+            "examples/conversational_ai/RAG",
+            "examples/conversational_ai/integrations",
+            "examples/conversational_ai/meetings"
+          ]
+        },
+        {
+          "group": "Interactive Avatars",
+          "pages": [
+            "examples/avatars/introduction",
+            "examples/avatars/interviewing",
+            "examples/avatars/language_learning",
+            "examples/avatars/customer_support",
+            "examples/avatars/custom_avatar"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "General",
+      "pages": [
+        "examples/commentator",
+        "examples/cooking",
+        "examples/3d_chatbot"
+      ]
+    },
+    {
+      "group": "General",
+      "pages": ["realtime_sdk/installation"]
+    },
+    {
+      "group": "CLI",
+      "pages": ["realtime_sdk/cli/deploy"]
+    },
+    {
+      "group": "Python API",
+      "pages": [
+        "realtime_sdk/sdk/app",
+        "realtime_sdk/sdk/streaming_endpoint",
+        {
+          "group": "Plugins",
+          "pages": [
+        "realtime_sdk/sdk/plugins/openai",
+        "realtime_sdk/sdk/plugins/elevenlabs",
+        "realtime_sdk/sdk/plugins/fireworksai",
+        "realtime_sdk/sdk/plugins/deepgram"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "General",
+      "pages": ["javascript/usage"]
+    },
+    {
+      "group": "Components",
+      "pages": [
+        "javascript/useRealtime",
+        "javascript/useConfig",
+        "javascript/RtAudio",
+        "javascript/RtVideo",
+        "javascript/RtChat",
+        "javascript/RtAudioVisualizer"
+      ]
+    }
+  ],
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
+  "footerSocials": {
+    "discord": "https://discord.gg/cmfFw6SYvp",
+    "github": "https://github.com/xAlpha8/realtime-docs"
+  }
+}
