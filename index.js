@@ -1,1 +1,1 @@
-console.log("Parhta tu randi h ")
+console.log("Hello world! from adapt docs javascript file");
